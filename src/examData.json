@@ -1,0 +1,48 @@
+{
+  "title": "KISI-KISI MATERI UJIAN: ALGORITHM TYCOON",
+  "description": "Penjelasan lengkap mengenai materi pokok yang diujikan pada setiap tingkatan (Tahap 1 sampai Tahap 6).",
+  "stages": [
+    {
+      "id": 1,
+      "title": "TAHAP 1: TEKNISI PERANGKAT KERAS (Sistem Angka Biner)",
+      "summary": "Materi ini membahas bagaimana mesin komputer membaca dan menyimpan data menggunakan bilangan biner (basis 2). Manusia menghitung menggunakan sepuluh angka (0-9), sedangkan komputer hanya memahami dua kondisi aliran listrik.",
+      "content": [
+        "Angka 1: Menandakan arus listrik mengalir (NYALA / ON).",
+        "Angka 0: Menandakan arus listrik terputus (MATI / OFF)."
+      ],
+      "hasTable": true,
+      "tableData": {
+        "headers": ["Digit 5 (Kiri)", "Digit 4", "Digit 3", "Digit 2", "Digit 1 (Kanan)"],
+        "weights": [16, 8, 4, 2, 1]
+      },
+      "examples": [
+        { "title": "Mengubah Biner ke Desimal", "desc": "Contoh: Kode biner 01100 -> Digit dengan bobot 8 bernilai 1 (NYALA), digit dengan bobot 4 bernilai 1 (NYALA). Hasil: 8 + 4 = 12." },
+        { "title": "Operasi Penjumlahan", "desc": "[00100] + [00010] -> Ubah ke angka biasa: 4 + 2 = 6. Angka 6 diubah kembali ke biner menjadi 00110 (bobot 4 dan 2 aktif)." },
+        { "title": "Operasi Perkalian", "desc": "[00011] * [00010] -> Ubah ke angka biasa: 3 * 2 = 6. Angka 6 diubah kembali ke biner menjadi 00110." }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "TAHAP 2: KONFIGURATOR ANTARMUKA (Kode Semu & Logika Saklar)",
+      "summary": "Materi ini melatih kemampuan dalam menganalisis baris instruksi tertulis (kode semu) serta memahami bagaimana arus data mengalir melewati rangkaian saklar logika penentu.",
+      "sections": [
+        {
+          "heading": "Analisis Kode Semu (Membaca Jalur Instruksi)",
+          "items": [
+            "Penggabungan Teks (Concatenation): Memahami menyambungkan potongan kata/simbol memori terpisah menjadi satu baris kalimat utuh. Contoh: awal = 'AWAS_' dan id = 'UTAMA' -> Perintah CETAK awal + id menghasilkan: AWAS_UTAMA.",
+            "Pelacakan Nilai Variabel: Mengikuti perkembangan nilai angka yang berubah karena operasi hitung secara berurutan. Contoh: Baris 1: skor = 10 -> Baris 2: skor = skor + 5 (skor jadi 15) -> Baris 3: CETAK skor menghasilkan: 15.",
+            "Percabangan Kondisi (JIKA-MAKA / IF-ELSE): Memilih salah satu jalur perintah berdasarkan syarat angka. Contoh: JIKA nilai > 70 MAKA cetak 'LULUS', LAINNYA cetak 'GAGAL'. Jika nilai dimasukkan 65, hasil cetak: GAGAL."
+          ]
+        },
+        {
+          "heading": "Rangkaian Saklar Listrik (Gerbang Logika Dasar)",
+          "items": [
+            "Sistem Seri (Logika DAN): Saklar dipasang berurutan pada satu jalur tunggal. Arus hanya lewat jika semua saklar AKTIF (1). Jika ada satu saja yang MATI (0), aliran terputus. Contoh: Saklar A=1 dan B=0, hasil akhirnya: 0 (Lampu Mati).",
+            "Sistem Paralel (Logika ATAU): Saklar dipasang pada cabang jalur berbeda. Lampu menyala jika salah satu saja saklar berada dalam kondisi AKTIF (1). Contoh: Saklar A=0 dan B=1, hasil akhirnya: 1 (Lampu Nyala).",
+            "Komponen Pembalik (Logika NOT): Alat otomatis yang berfungsi mengubah total status arus masuk menjadi kebalikannya. Jika masuk bernilai 1 (AKTIF), keluar menjadi 0 (MATI). Contoh: Status awal Saklar A=1 -> Dilewatkan ke komponen pembalik menjadi: 0."
+          ]
+        }
+      ]
+    }
+  ]
+}
